@@ -1,0 +1,23 @@
+{
+  "results": {
+    "winogrande": {
+      "acc": 0.7698412698412699,
+      "acc_stderr": 0.03764950879790604
+    }
+  },
+  "versions": {
+    "winogrande": 0
+  },
+  "config": {
+    "model": "ipex-llm",
+    "model_args": "pretrained=/home/test/models/LLM/Qwen2-7B/pytorch/,load_in_low_bit=sym_int4,dtype=float16",
+    "num_fewshot": 5,
+    "batch_size": "1",
+    "batch_sizes": [],
+    "device": "xpu",
+    "no_cache": true,
+    "limit": 0.1,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
